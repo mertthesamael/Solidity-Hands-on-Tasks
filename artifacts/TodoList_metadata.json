@@ -6,6 +6,19 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -101,6 +114,10 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -131,11 +148,11 @@
 	},
 	"sources": {
 		"Hands on Task - 2.sol": {
-			"keccak256": "0xf4079cf2d90888f653ec23d4a194fdf3ef246d6c44bf3212b5125db711f68c95",
+			"keccak256": "0xff9a789fe2fd88db5dbf4b13b3e63fe9b564c82531b289d8f15b9ca41b704394",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cbd29d2336df3045ab8e723e93c4476f46be2fdd5303c2aaba0846002a8e93ad",
-				"dweb:/ipfs/QmcSPwcyKkyEmqKo9GZdK2D2N6dnAnwH4MdcsGkz5sBuec"
+				"bzz-raw://c2aabebc7e51a5aee7861fff1f0d4b099b93bbf0dee243f221a391a230765ba0",
+				"dweb:/ipfs/QmZ45pkG8r2hsXEDviHehyvQMrm2cyBSbAc8HApG1JRAzJ"
 			]
 		}
 	},

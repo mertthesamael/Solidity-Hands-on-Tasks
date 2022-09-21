@@ -4,7 +4,13 @@ pragma solidity ^0.8.7;
 
 
 contract TodoList {
-    // Setting default todo state. Text is simply todo task, and bool is state of tasks.
+    // Setting default todo state. Text is simply todo task, and bool is state of tasks and letting contract receive balance.
+    uint256 public balance;
+
+    receive() payable external {
+        balance += msg.value;
+    }
+
     struct Todo {
         address _address;
         string text;
