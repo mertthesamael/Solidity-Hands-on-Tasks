@@ -6,6 +6,7 @@ pragma solidity ^0.8.7;
 contract TodoList {
     // Setting default todo state. Text is simply todo task, and bool is state of tasks.
     struct Todo {
+        address _address;
         string text;
         bool completed;
 
@@ -16,6 +17,7 @@ contract TodoList {
     // Creating an array for tasks and add task in to array.
     function create(string calldata _text) external {
         todos.push(Todo({
+            _address: msg.sender,
             text: _text,
             completed: false
         }));
@@ -35,11 +37,13 @@ contract TodoList {
         return (todo.text, todo.completed);
 
     }
-
+    
     // Function for mark the tasks as completed.
     function toggleCompleted(uint256 _index) external {
         todos[_index].completed = !todos[_index].completed;
     }
+
+
 
 
 }

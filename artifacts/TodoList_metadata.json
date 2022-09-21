@@ -53,6 +53,11 @@
 				"name": "todos",
 				"outputs": [
 					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					},
+					{
 						"internalType": "string",
 						"name": "text",
 						"type": "string"
@@ -126,11 +131,11 @@
 	},
 	"sources": {
 		"Hands on Task - 2.sol": {
-			"keccak256": "0xc3838bddf299e62f30a8b3234c2a1ca9a5f33d2ad330313d8cf0743998c569a6",
+			"keccak256": "0xf4079cf2d90888f653ec23d4a194fdf3ef246d6c44bf3212b5125db711f68c95",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://eec4580f18b36eaf444e87fb1375b44f8b9dcdc2812a5843309c7fae59e660e6",
-				"dweb:/ipfs/QmSf4hLaP5Qs5Rqr9hBmzy6uV5WynHte8DbnN5ezqTokYa"
+				"bzz-raw://cbd29d2336df3045ab8e723e93c4476f46be2fdd5303c2aaba0846002a8e93ad",
+				"dweb:/ipfs/QmcSPwcyKkyEmqKo9GZdK2D2N6dnAnwH4MdcsGkz5sBuec"
 			]
 		}
 	},
