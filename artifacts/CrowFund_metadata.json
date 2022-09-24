@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Hands on Task - 3.sol": "CrowFund"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Hands on Task - 3.sol": {
+			"keccak256": "0x5b5c574dc7500ccb16b6dbef50db2f21bcd616d7862d3f6291ddf9fd62057da9",
+			"urls": [
+				"bzz-raw://29c8f82e08ed85fec366a69c94ca1217ca07ec0c8ebc93ba9e2431a5bee66ff7",
+				"dweb:/ipfs/QmRijb5Qg15nyKK4a1RxPqNJaFzmtW3N17rYiWYFrgb2bR"
+			]
+		}
+	},
+	"version": 1
+}

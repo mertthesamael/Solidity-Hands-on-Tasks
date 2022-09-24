@@ -1,0 +1,420 @@
+{
+	"id": "b30e33a65aafc0170e8cc5c5456a62fe",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Hands on Task - 3.sol": {
+				"content": "pragma solidity ^0.8.7;\r\n// SPDX-License-Identifier: MIT\r\n\r\n\r\ncontract CrowdFund{\r\n\r\n    struct Campaign {\r\n        address creator;\r\n        uint256 goal;\r\n        uint32 startAt;\r\n        \r\n    }\r\n\r\n\r\n\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Hands on Task - 3.sol": {
+				"CrowdFund": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"Hands on Task - 3.sol\":62:206  contract CrowdFund{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Hands on Task - 3.sol\":62:206  contract CrowdFund{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220c13ab73cb3ab96babbb6b9ceb50cf565d298a82cfdd4aac55e6d31c20cc662e164736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220c13ab73cb3ab96babbb6b9ceb50cf565d298a82cfdd4aac55e6d31c20cc662e164736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC1 GASPRICE 0xB7 EXTCODECOPY 0xB3 0xAB SWAP7 0xBA 0xBB 0xB6 0xB9 0xCE 0xB5 0xC CREATE2 PUSH6 0xD298A82CFDD4 0xAA 0xC5 0x5E PUSH14 0x31C20CC662E164736F6C63430008 SMOD STOP CALLER ",
+							"sourceMap": "62:144:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220c13ab73cb3ab96babbb6b9ceb50cf565d298a82cfdd4aac55e6d31c20cc662e164736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC1 GASPRICE 0xB7 EXTCODECOPY 0xB3 0xAB SWAP7 0xBA 0xBB 0xB6 0xB9 0xCE 0xB5 0xC CREATE2 PUSH6 0xD298A82CFDD4 0xAA 0xC5 0x5E PUSH14 0x31C20CC662E164736F6C63430008 SMOD STOP CALLER ",
+							"sourceMap": "62:144:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 62,
+									"end": 206,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220c13ab73cb3ab96babbb6b9ceb50cf565d298a82cfdd4aac55e6d31c20cc662e164736f6c63430008070033",
+									".code": [
+										{
+											"begin": 62,
+											"end": 206,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 62,
+											"end": 206,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 62,
+											"end": 206,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 62,
+											"end": 206,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 62,
+											"end": 206,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 62,
+											"end": 206,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"Hands on Task - 3.sol\":\"CrowdFund\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Hands on Task - 3.sol\":{\"keccak256\":\"0x139b5120a1b22ba67cc8439503e05083e34241ca9b4033109b1f815a94b352ff\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3112283c3555a799d7da639298779880e5716019462c9a4939e1bdf3143b647d\",\"dweb:/ipfs/QmPPW2Y7a9qiovC6S3faia1gnujvLzYXmAsVE1aUQ9jWgj\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"Hands on Task - 3.sol": {
+				"ast": {
+					"absolutePath": "Hands on Task - 3.sol",
+					"exportedSymbols": {
+						"CrowdFund": [
+							9
+						]
+					},
+					"id": 10,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".7"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 9,
+							"linearizedBaseContracts": [
+								9
+							],
+							"name": "CrowdFund",
+							"nameLocation": "71:9:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "CrowdFund.Campaign",
+									"id": 8,
+									"members": [
+										{
+											"constant": false,
+											"id": 3,
+											"mutability": "mutable",
+											"name": "creator",
+											"nameLocation": "124:7:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 8,
+											"src": "116:15:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_address",
+												"typeString": "address"
+											},
+											"typeName": {
+												"id": 2,
+												"name": "address",
+												"nodeType": "ElementaryTypeName",
+												"src": "116:7:0",
+												"stateMutability": "nonpayable",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 5,
+											"mutability": "mutable",
+											"name": "goal",
+											"nameLocation": "150:4:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 8,
+											"src": "142:12:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 4,
+												"name": "uint256",
+												"nodeType": "ElementaryTypeName",
+												"src": "142:7:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 7,
+											"mutability": "mutable",
+											"name": "startAt",
+											"nameLocation": "172:7:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 8,
+											"src": "165:14:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint32",
+												"typeString": "uint32"
+											},
+											"typeName": {
+												"id": 6,
+												"name": "uint32",
+												"nodeType": "ElementaryTypeName",
+												"src": "165:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint32",
+													"typeString": "uint32"
+												}
+											},
+											"visibility": "internal"
+										}
+									],
+									"name": "Campaign",
+									"nameLocation": "96:8:0",
+									"nodeType": "StructDefinition",
+									"scope": 9,
+									"src": "89:108:0",
+									"visibility": "public"
+								}
+							],
+							"scope": 10,
+							"src": "62:144:0",
+							"usedErrors": []
+						}
+					],
+					"src": "0:206:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
